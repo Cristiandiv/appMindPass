@@ -11,6 +11,25 @@ export default function HomeScreen({ navigation }){
     >
 
      
+        <ScrollView style={styles.ScrollView}>
+
+        <Image
+        source={require('../assets/Mind-Pass.gif')}
+        style={styles.backgroundMindpass}
+        />
+        <Image
+        source={require('../assets/Mind-Pass.gif')}
+        style={styles.backgroundMindpass}
+        />
+        <Image
+        source={require('../assets/Mind-Pass.gif')}
+        style={styles.backgroundMindpass}
+        />
+
+        </ScrollView>
+
+
+
     <View style={styles.viewstyle}>
 
     <TouchableOpacity title="Home" style={styles.fundoIcone}
@@ -54,24 +73,6 @@ export default function HomeScreen({ navigation }){
     </TouchableOpacity>
     </View>
 
-
-    <ScrollView style={styles.ScrollView}>
-
-    <Image
-    source={require('../assets/Mind-Pass.gif')}
-    style={styles.backgroundMindpass}
-    />
-    <Image
-    source={require('../assets/Mind-Pass.gif')}
-    style={styles.backgroundMindpass}
-    />
-    <Image
-    source={require('../assets/Mind-Pass.gif')}
-    style={styles.backgroundMindpass}
-    />
-
-    </ScrollView>
-
     
 
    </ImageBackground>
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 6,
-    
+    paddingVertical: 6,
   },
 
   buttonImageIconStyle: {
@@ -108,8 +109,8 @@ const styles = StyleSheet.create({
     padding: 1,
     backgroundColor: '#dcdcdc', ///azul bb : #87cefa / verde : #3cb371 
     opacity: 0.72,
-    position: 'relative'
-  },
+    position: 'relative',
+    },
 
   fundoIcone: {
     margin: 6,
